@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page1 {
+  background-color: black;
+  background-image: url(./images/mainpage.svg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.page1 .overlay {
+  position: absolute;    
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    
+  pointer-events: none;  
+  z-index: 1;           
+}
+
+.navbar {
+  height: 13%;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: system-ui;
+}
+
+.logo {
+  padding: 2px 18px;
+  text-align: center;
+  display: flex;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 350;
+  color: #C5C6CB;
+  letter-spacing: -1px;
+}
+
+.logo h3 {
+  font-size: 43px;
+  color: #C5C6CB;
+  font-weight: 500;
+}
+
+.logo:hover {
+  background-color: #292d30;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 130px;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.docs h3 {
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.docs h4 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.docs h3:hover {
+  color: #c5c6cb;
+}
+
+.communities h3 {
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resources h3 {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 17px;
+}
+
+.buttons i {
+  font-size: 16px;
+}
+
+.discord {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.discord:hover {
+  background-color: #7b7d82;
+}
+
+.explore {
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  color: #292d30;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.explore:hover {
+  background-color: #c5c6cb;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.earth img {
+  position: absolute;
+  width: 128px;
+  top: 73%;
+  left: 45%;
+}
