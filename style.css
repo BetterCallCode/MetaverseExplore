@@ -1,3 +1,8 @@
+@font-face {
+  font-family: clash;
+  src: url(clash-grotesk-semibold.otf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,16 +13,25 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #09090A;
 }
 
 .page1 {
-  background-color: black;
-  background-image: url(./images/mainpage.svg);
-  background-position: center;
-  background-size: cover;
   height: 100vh;
   width: 100%;
   position: relative;
+}
+
+.giant {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  transform: translateY(-26%);
+  width: 100%;       
+  min-height: 200vh;  
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .page1 .overlay {
@@ -39,6 +53,8 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: system-ui;
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -150,7 +166,7 @@ body {
 
 .center {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,5 +177,96 @@ body {
   position: absolute;
   width: 128px;
   top: 73%;
-  left: 45%;
+  left: 46%;
+}
+
+.explorer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 720px;
+}
+
+.explorer h1{
+  margin: 10px 0;
+  font-size: 70px;
+  color: #0E0F10;
+  font-family: clash;
+}
+
+.explorer p{
+  text-align: center;
+  font-size: 30px;
+  color: #292D30;
+  font-family: system-ui;
+  margin-bottom: 47px;
+}
+
+.explorer button{
+  padding: 20px 26px;
+  font-size: 16px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  display: flex;
+  gap: 19px;
+  cursor: pointer;
+}
+
+.explorer button:hover{
+  background-color: #212528;
+}
+
+.page2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.big{
+  position: absolute;
+  top: 235px;
+  left: 150px;
+  width: 80%;        
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.era{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 59%;
+  left: 32%;
+  position: absolute;
+  
+}
+
+.era button{
+  font-family: system-ui;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 16px;
+  color: white;
+  padding: 6px 14px;
+  font-weight: 500;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.era h2{
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-family: clash;
+}
+
+.era p{
+  color: #7B7D82;
+  text-align: center;
+  font-family: system-ui;
+  font-size: 25px;
 }
