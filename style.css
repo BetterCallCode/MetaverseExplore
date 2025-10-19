@@ -270,3 +270,28 @@ body {
   font-family: system-ui;
   font-size: 25px;
 }
+
+.page3{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.blue{
+  position: absolute;
+  width: 63%;
+  height: auto;
+  left: 18%;
+}
+
+.cat{
+  position: absolute;
+  height: auto;
+  width: 63%;
+  left: 18%;
+}
+
+.page4{
+  height: 120vh;
+  width: 100%;
+}
