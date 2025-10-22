@@ -166,7 +166,6 @@ body {
 
 .center {
   position: relative;
-  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,7 +366,7 @@ body {
 }
 
 .page6{
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -414,3 +413,175 @@ body {
   height: auto;
 }
 
+.page7{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 160px 1fr 1fr;
+  grid-template-areas: "protocol protocol protocol"
+                       "visual earn app"
+                       "visual earn chain";
+  padding: 35px;
+  grid-gap: 35px;
+}
+
+.page7 > div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.protocol{
+  grid-area: protocol;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.protocol h4{
+  color: #7B7D82;
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+.protocol h1{
+  font-family: clash;
+  font-size: 60px;
+  color: white;
+}
+
+.visual{
+  background-color: #0E0F10;
+  grid-area: visual;
+  border: 2px solid #292D30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  gap: 16px;
+}
+
+.visual h4{
+  color: #7B7D82;
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+.visual h2{
+  font-family: clash;
+  font-size: 30px;
+  color: white;
+}
+
+.coin img,
+.multicoin img {
+  display: block;
+  margin: 0 auto; /* centers horizontally */
+  width: 330px;
+  height: auto;
+}
+
+.earn{
+  background-color: #0E0F10;
+  border: 2px solid #292D30;
+  grid-area: earn;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  gap: 16px;
+}
+
+.earn h4{
+  color: #7B7D82;
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+.earn h2{
+  font-family: clash;
+  font-size: 30px;
+  color: white;
+}
+
+.app{
+  background-color: #0E0F10;
+  grid-area: app;
+  border: 2px solid #292D30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  gap: 16px;
+}
+
+.app h2{
+  font-family: clash;
+  font-size: 30px;
+  color: white;
+}
+
+.app h4{
+  color: #7B7D82;
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+.chain{
+  background-color:#0E0F10;
+  grid-area: chain;
+  border: 2px solid #292D30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  gap: 16px;
+}
+
+.chain h2{
+  font-family: clash;
+  font-size: 30px;
+  color: white;
+}
+
+.chain h4{
+  color: #7B7D82;
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+.page8{
+  width: 100%;
+  height: 90vh;
+  background-image: url(./images/halfball.svg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.beech{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 250px;
+}
+
+.dharti{
+  height: auto;
+  width: 130px;
+  display: block;
+  margin: 0 auto;
+}
+
+.beech h1{
+  text-align: center;
+  font-family: clash;
+  font-size: 60px;
+  color: #0E0F10;
+  letter-spacing: -1px;
+}
