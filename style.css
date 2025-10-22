@@ -14,6 +14,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #09090A;
+  overflow-x: clip;
 }
 
 .page1 {
@@ -271,7 +272,7 @@ body {
 }
 
 .page3{
-  height: 120vh;
+  height: 160vh;
   width: 100%;
   position: relative;
 }
@@ -295,16 +296,131 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 1fr;
-  grid-gap: 40px;
+  grid-template-rows: 300px 1fr 1fr 1fr;
+  grid-template-areas: "timeline timeline bluecard"
+                       "nft dao bluecard"
+                       "poap defi bluecard"
+                       "soon soon bluecard";
   padding: 35px;
+  grid-gap: 35px;
+  position: relative;
 }
 
-.left{
-  background-color: red;
+.page4 .bring{
+  position: absolute;
+  overflow: hidden;
+  width: 67%;
+  left: 83%;
+  top: 380px;
+  height: auto;
+  transform: scaleX(-1);
 }
 
-.right{
-  background-color: blue;
+.timeline{
+  grid-area: timeline;
+  padding-top: 120px;
+}
+
+.timeline h4{
+  color: #7B7D82;
+  font-size: 16px;
+  font-family: system-ui;
+  font-weight: 400;
+}
+
+.timeline h1{
+  color: white;
+  font-family: clash;
+  font-size: 57px;
+}
+
+.timeline p{
+  color: #7B7D82;
+  font-family: system-ui;
+  font-size: 24px;
+}
+
+.nft{
+  grid-area: nft;
+}
+
+.nft h4{
+  color: white;
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+.nft p{
+  color: #7B7D82;
+  font-family: system-ui;
+  font-size: 16px;
+}
+
+.dao{
+  grid-area: dao;
+}
+
+.dao h4{
+  color: white;
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+.dao p{
+  color: #7B7D82;
+  font-family: system-ui;
+  font-size: 16px;
+}
+
+.defi{
+  grid-area: defi;
+}
+
+.defi h4{
+  color: white;
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+.defi p{
+  color: #7B7D82;
+  font-family: system-ui;
+  font-size: 16px;
+}
+
+.poap{
+  grid-area: poap;
+}
+
+.poap h4{
+  color: white;
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+.poap p{
+  color: #7B7D82;
+  font-family: system-ui;
+  font-size: 16px;
+}
+
+.soon{
+  grid-area: soon;
+}
+
+.soon h4{
+  color: white;
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+.bluecard{
+  grid-area: bluecard;
+}
+
+.bluecard img{
+  height: auto;
+  width: 730px;
 }
 
 .page5{
@@ -568,7 +684,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 250px;
+  padding-top: 210px;
+  gap: 30px;
 }
 
 .dharti{
@@ -584,4 +701,31 @@ body {
   font-size: 60px;
   color: #0E0F10;
   letter-spacing: -1px;
+  line-height: 1;
+}
+
+.beech button{
+  padding: 16px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.beech h4{
+  font-weight: 400;
+}
+
+.beech button:hover{
+  background-color: #212528;
+}
+
+.page9{
+  height: 54vh;
+  width: 100vh;
+  background-color: #0A0A0B;
 }
